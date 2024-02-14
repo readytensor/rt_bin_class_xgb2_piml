@@ -36,7 +36,7 @@ The following is the directory structure of the project:
   - **`data_models/`**: for data models for input validation including the schema, training and test files, and the inference request data. It also contains the data model for the batch prediction results.
   - **`schema/`**: for schema handler script. This script contains the class that provides helper getters/methods for the data schema.
   - **`preprocessing/`**: for data preprocessing scripts including the feature and target encoding/transformations. We use **Scikit-Learn** and **feature-engine** for preprocessing.
-  - **`prediction/`**: Scripts for the Bagging classifier model implemented using **Scikit-Learn** library.
+  - **`prediction/`**: Scripts for the XGB2 classifier model implemented using **Scikit-Learn** library.
   - **`hyperparameter_tuning/`**: for hyperparameter-tuning (HPT) functionality implemented using **Optuna** for the model.
   - **`xai/`**: for explainable AI functionality implemented using **lime** library. This provides local explanations for predictions.
   - **`serve.py`**: This script is used to serve the model as a REST API using **FastAPI**. It loads the artifacts and creates a FastAPI server to serve the model. It provides 3 endpoints: `/ping`, `/infer`, and `/explain`. The `/ping` endpoint is used to check if the server is running. The `/infer` endpoint is used to make predictions. The `/explain` endpoint is used to get local explanations for the predictions.
