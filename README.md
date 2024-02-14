@@ -1,4 +1,4 @@
-# Bagging Classifier in Scikit-Learn with LIME explanations
+# XGB2 Binary Classifier in PiML with Shapley explanations
 ## Project Description
 This repository is a dockerized implementation of the re-usable binary classifier model. It is implemented in flexible way so that it can be used with any binary classification dataset with the use of CSV-formatted data, and a JSON-formatted data schema file. The main purpose of this repository is to provide a complete example of a machine learning model implementation that is ready for deployment.
 The following are the requirements for using your data with this model:
@@ -10,7 +10,7 @@ The following are the requirements for using your data with this model:
 ---
 Here are the highlights of this implementation: <br/>
 - A flexible preprocessing pipeline built using **SciKit-Learn** and **feature-engine**. Transformations include missing value imputation, categorical encoding, outlier removal, feature selection, and feature scaling. <br/>
-- A **Bagging classifier** algorithm built using **SciKit-Learn**
+- A **XGB2 classifier** algorithm built using **PiML**
 - Hyperparameter-tuning using **Optuna**
 - LIME explainer using the **lime** package
 - **FASTAPI** inference service for online inferences.
